@@ -1,0 +1,21 @@
+#include "UbidotsMicroESP8266.h"
+#define TOKEN  "le2sp13GLhhST0XnWC1XL36ySWedBS"  // Put here your Ubidots TOKEN
+#define WIFISSID "iBall-Baton"
+#define PASSWORD "desd1234!"
+#define ID "57d425607625425121ffa700"  
+
+Ubidots client(TOKEN);
+float value = 50;
+void setup(){
+    Serial.begin(115200);
+    delay(10);
+    client.wifiConnection(WIFISSID, PASSWORD);
+    
+}
+void loop(){
+    value++;
+    client.add("Temperature", value);
+    client.sendAll(true);
+    value = client.getValue(ID);
+    Serial.println(value);
+}

@@ -1,0 +1,9 @@
+So there was lot of buzz with Blynk
+
+I have attached code that is to be put in node_mcu with name Node_mcu_blynk_code
+Get Blynk software from Google play
+
+And email the key and put the key in nodemcu
+and it starts to work...
+
+I want to see if it has something with python..

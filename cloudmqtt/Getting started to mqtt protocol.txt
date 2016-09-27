@@ -1,0 +1,22 @@
+1.Copy paste Nodemcu_code.txt code to arduino ide.
+2.Edit 	#define wifi_ssid "iBall-Baton" --> make sure u put correct SSID
+	#define wifi_password "desd1234!" --> and password
+3.And upload code.
+
+4. Open https://api.cloudmqtt.com/sso/cloudmqtt/websocket
+ use username -aryaalways@gmail.com
+ password     -desd1234!
+
+5.Always remember to connect nodemcu first and then open websocket
+
+
+So uptil now we can only transmit data to server...with both python and arduino.... we have not recieved values either from arduino and python
+
+
+--------------till end of this project i was unable to receive msgs was only able to publish messages-------------------------------
+
+
+
+
+--------------*--------------*--------------*--------------*--------------*--------------*--------------*--------------*--------------
+
